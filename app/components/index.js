@@ -108,20 +108,23 @@ export default class MainComponent extends Component {
         <div className='row mb-3'>
           <div className = 'col-lg-6'>
             <form className="form-inline">
-              <div className='mr-3'>
+              <div className='mr-3 mb-3'>
                 <GenderSortDropdown
                   handleFilter = { ::this.filterUsers }
                   filterBy = { this.state.filterBy }
                 />
               </div>
-              <SearchUserInput
-                handleSearch = { ::this.search }
-              />
+              <div className='mb-3'>
+                <SearchUserInput
+                  handleSearch = { ::this.search }
+                />
+              </div>
+              
             </form>
           </div>
           <div className = 'col-lg-6'>
-            <h3 className = 'float-right' >
-             { users.length <= 0 ? <i className="em em-disappointed"/> : null }
+            <h3 className = 'float-right text-white' >
+             {/* { users.length <= 0 ? <i className="em em-disappointed"/> : null } */}
              { users.length } people attending { this.state.eventName } event
              </h3>
           </div>

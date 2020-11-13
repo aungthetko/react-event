@@ -80,8 +80,7 @@ export default class AddUserCard extends Component {
 
       <div>
 
-        <i className = { plusOrMinusSign } onClick = { ::this.onToggleAddSection }></i> { addOrRemoveText }
-
+        <i style={{color: '#fff'}} className = { plusOrMinusSign } onClick = { ::this.onToggleAddSection }></i> { addOrRemoveText }
         <div style = { addSectionStyle } className="col-lg-12 addUserSection">
           <form onSubmit = { ::this.onSubmitForm } >
 
