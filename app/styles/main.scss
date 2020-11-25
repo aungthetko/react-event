@@ -77,3 +77,17 @@ small.text-muted {
   color: #fff!important;
   padding: 0px;
 }
+
+a.profile {
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+a.profile:hover {
+  color: #625df5;
+  text-decoration: none;
+  background: #fff;
+  transition: .3s;
+}

@@ -21,7 +21,7 @@ export default class UserCard extends Component {
                 <i className = "fa fa-envelope"/> - { email }
               </a>
             </p>
-            <p className="card-text"><small className="text-muted"> { region }  <span className = {flagClassName}> </span> </small> </p>
+            <p className="card-text"><small className="text-muted"> { region } </small> </p>
             <i className = 'removeIcon fa fa-remove fa-2x float-right hvr-grow' onClick = { ::this.onRemoveUser }> </i>
           </div>
         </div>;
